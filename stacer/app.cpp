@@ -25,7 +25,7 @@ void App::init()
 {
     setGeometry(
         QStyle::alignedRect(Qt::LeftToRight, Qt::AlignCenter,
-            size(), qApp->desktop()->availableGeometry())
+            size(), QGuiApplication::primaryScreen()->availableGeometry())
     );
 
     // form settings
